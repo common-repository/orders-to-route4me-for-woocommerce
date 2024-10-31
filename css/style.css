@@ -1,0 +1,246 @@
+.r4me_meta_wrapper{
+	position: relative;
+}
+#r4me_order_btn{
+	margin-top: 20px;
+}
+#r4me_order_btn.disabled{
+	pointer-events: none;
+}
+.r4me_meta_wrapper .r4m-exported-note{
+  padding: 10px;
+  background: #efefef;
+  position: relative;
+}
+.r4me_meta_wrapper .r4m-exported-note p {
+  margin: 4px 0;
+  padding: 0;
+  word-wrap: break-word;
+}
+.r4me_meta_wrapper input{
+	width: 100%;
+}
+#r4me_geocoded_status label{
+	line-height: 24px;
+}
+.r4me_success_message{
+	margin-top: 20px;
+}
+.r4me_spinner{
+	position: absolute;
+  width: 20px;
+  height: 20px;
+	bottom: 0;
+	right: 0;
+  background-image: url('../img/spinner.gif');
+  background-repeat: no-repeat;
+}
+.r4me-schedule{
+	margin-top: 10px;
+}
+#r4me_lookup_show{
+	display: none;
+}
+.r4me_lookup_response{
+	padding: 16px 20px 30px;
+}
+.r4me_lookup_response table{
+	width: 100%
+}
+.r4me_lookup_response th, .r4me_lookup_response td{
+	text-align: center;
+}
+a#r4me_lookup{
+    width: 28px;
+    text-align: center;
+    padding: 0;
+    margin-left: 16px;
+}
+a#r4me_lookup>img{
+	position: relative;
+	top: 4px;
+  width: 16px;
+  height: 16px;
+}
+a#r4me_lookup.r4m-lookup-lg{
+  width: auto;
+  padding: 0 10px;
+  margin-top: 8px;
+}
+a#r4me_lookup.r4m-lookup-lg>img{
+  margin-right: 8px;
+}
+.r4me_list_spinner{
+	display: none;
+	position: relative;
+	top: 2px;
+	left: 10px;
+}
+
+/* Bulk export */
+.r4me_metabox-row{
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.r4me_final_bulk_form .r4me_metabox-row{
+  margin-top: 16px;
+}
+.ca_metabox-row:after, .ca_metabox-row:before{
+display: table;
+content: " ";
+}
+.r4me_metaflota{
+float: left;
+}
+.clr {
+clear: both;
+padding: 0;
+margin: 0;
+width: 100%;
+height: 0;
+line-height: 0px;
+font-size: 0px;
+overflow: hidden;
+}
+.r4me_metabox-row input{
+display: block;
+width: 100%;
+height: 34px !important;
+padding: 6px 12px !important;
+}
+.r4me_metabox-row .metabox-desc{
+	width: 40%;
+	text-align: right;
+}
+.r4me_metabox-row .metabox-field{
+	width: 60%;
+}
+.r4me_metabox-row .small-desc{
+	font-size: 12px;
+	color: #9e9e9e;
+	margin-right: 8px;
+}
+.r4me_metabox-row label{
+	margin-right: 8px;
+}
+.r4me-hidden-inputs{
+	display: none;
+}
+.r4me_button_container{
+	padding: 16px 12px 24px;
+	float: right;
+}
+.r4me_bulk_note{
+	background: #fafafa;
+	padding: 24px 16px;
+}
+.r4me_bulk_note>div{
+	margin-bottom: 10px;
+}
+
+
+#r4me_preloader .progress {
+  position: fixed;
+  top: 0;
+  margin: 0;
+  border-radius: 0;
+  z-index: 999999999;
+  height: 4px;
+  display: block;
+  width: 100%;
+  background-color: #e8eaf6;
+  overflow: hidden;
+}
+
+.r4m_hidden{display: none;}
+
+#r4me_preloader .progress .indeterminate {
+  background-color: #4c5d83;
+}
+
+#r4me_preloader .progress .indeterminate:before {
+  content: '';
+  position: absolute;
+  background-color: inherit;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  will-change: left, right;
+  -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+          animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+}
+
+#r4me_preloader .progress .indeterminate:after {
+  content: '';
+  position: absolute;
+  background-color: inherit;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  will-change: left, right;
+  -webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+          animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+  -webkit-animation-delay: 1.15s;
+          animation-delay: 1.15s;
+}
+
+@-webkit-keyframes indeterminate {
+  0% {
+    left: -35%;
+    right: 100%;
+  }
+  60% {
+    left: 100%;
+    right: -90%;
+  }
+  100% {
+    left: 100%;
+    right: -90%;
+  }
+}
+
+@keyframes indeterminate {
+  0% {
+    left: -35%;
+    right: 100%;
+  }
+  60% {
+    left: 100%;
+    right: -90%;
+  }
+  100% {
+    left: 100%;
+    right: -90%;
+  }
+}
+
+@-webkit-keyframes indeterminate-short {
+  0% {
+    left: -200%;
+    right: 100%;
+  }
+  60% {
+    left: 107%;
+    right: -8%;
+  }
+  100% {
+    left: 107%;
+    right: -8%;
+  }
+}
+
+@keyframes indeterminate-short {
+  0% {
+    left: -200%;
+    right: 100%;
+  }
+  60% {
+    left: 107%;
+    right: -8%;
+  }
+  100% {
+    left: 107%;
+    right: -8%;
+  }
+}
